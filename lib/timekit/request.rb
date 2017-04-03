@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'singleton'
 require 'rest-client'
 
@@ -9,7 +10,7 @@ module Timekit
 
     BASE_URL = 'https://api.timekit.io/v2'
 
-    [:get, :put, :post, :delete].each do |verb|
+    %i[get put post delete].each do |verb|
       define_method(verb) do |path, params, headers|
         request __method__, path, params, headers
       end

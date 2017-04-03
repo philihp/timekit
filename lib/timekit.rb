@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative './timekit/config'
 require_relative './timekit/client'
 require_relative './timekit/authorization'
@@ -27,9 +28,11 @@ module Timekit
 
     email = configurations[:email]
     token = configurations[:api_token]
+    return unless email && token
+
     config[:credentials] = Timekit::Authorization.new(
       email, token
-    ) if email && token
+    )
   end
 
   def self.calendar_client

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class Credential
     # Client class for the credential resource

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class Widget
     # Client class for the widget resource

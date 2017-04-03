@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class Event
     # Client class for the event resource
@@ -42,13 +43,13 @@ module Timekit
 
         params = set_optional_params(
           binding,
-          [
-            :participants,
-            :invite,
-            :description,
-            :my_rsvp,
-            :sync_provider,
-            :all_day
+          %i[
+            participants
+            invite
+            description
+            my_rsvp
+            sync_provider
+            all_day
           ],
           params
         )
@@ -71,11 +72,11 @@ module Timekit
 
         params = set_optional_params(
           binding,
-          [
-            :what,
-            :where,
-            :participants,
-            :all_day
+          %i[
+            what
+            where
+            participants
+            all_day
           ],
           params
         )

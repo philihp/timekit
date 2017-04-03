@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::Credential::Client do
   before(:all) do
     @client = Timekit::Credential::Client.new

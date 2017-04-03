@@ -1,9 +1,10 @@
 # frozen_string_literal: true
+
 module Timekit
   class Config < Hash
-    CONFIG_KEYS = [
-      :credentials,
-      :app
+    CONFIG_KEYS = %i[
+      credentials
+      app
     ].freeze
 
     def []=(key, value)

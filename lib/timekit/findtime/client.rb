@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class Findtime
     # Client class for the findtime resource
@@ -28,15 +29,15 @@ module Timekit
                                          !value.nil?
         end
 
-        raise 'Entity id required to find time'\
-          ' (email,user id,calendar id)' unless
-          params[:emails] || params[:user_ids] || params[:calendar_ids]
+        unless params[:emails] || params[:user_ids] || params[:calendar_ids]
+          raise 'Entity id required to find time'\
+            ' (email,user id,calendar id)'
+        end
 
         post(API_PATH, params)
       end
 
-      def bulk_query(queries)
-      end
+      def bulk_query(queries); end
     end
   end
 end

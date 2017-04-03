@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::Event::Client do
   before(:all) do
     @client = Timekit::Event::Client.new
@@ -64,7 +65,7 @@ describe Timekit::Event::Client do
           what: 'Voluptatem quod sint dolore non ut eos.',
           where: 'Nulla repellendus consequatur voluptatem officiis.',
           calendar_id: 'bfa0b9fa-36aa-4ae6-8096-f3b20fbed1d2',
-          participants: %w(person1 person2),
+          participants: %w[person1 person2],
           invite: false,
           description: 'Repellat alias possimus consectetur totam.',
           sync_provider: false,
@@ -85,7 +86,7 @@ describe Timekit::Event::Client do
         'Voluptatem quod sint dolore non ut eos.',
         'Nulla repellendus consequatur voluptatem officiis.',
         'bfa0b9fa-36aa-4ae6-8096-f3b20fbed1d2',
-        %w(person1 person2),
+        %w[person1 person2],
         false,
         'Repellat alias possimus consectetur totam.',
         false,
@@ -103,7 +104,7 @@ describe Timekit::Event::Client do
             what: 'Voluptatem quod sint dolore non ut eos.',
             where: 'Nulla repellendus consequatur voluptatem officiis.',
             calendar_id: 'bfa0b9fa-36aa-4ae6-8096-f3b20fbed1d2',
-            participants: %w(person1 person2),
+            participants: %w[person1 person2],
             invite: false,
             description: 'Repellat alias possimus consectetur totam.',
             sync_provider: false,
@@ -123,7 +124,7 @@ describe Timekit::Event::Client do
           'end' => '2016-01-15T10:00:00+00:00',
           what: 'Voluptatem quod sint dolore non ut eos.',
           where: 'Nulla repellendus consequatur voluptatem officiis.',
-          participants: %w(person1 person2),
+          participants: %w[person1 person2],
           all_day: false
         }
       ).to_return(
@@ -140,7 +141,7 @@ describe Timekit::Event::Client do
         '2016-01-15T10:00:00+00:00',
         'Voluptatem quod sint dolore non ut eos.',
         'Nulla repellendus consequatur voluptatem officiis.',
-        %w(person1 person2),
+        %w[person1 person2],
         false
       )
 
@@ -153,7 +154,7 @@ describe Timekit::Event::Client do
             'end' => '2016-01-15T10:00:00+00:00',
             what: 'Voluptatem quod sint dolore non ut eos.',
             where: 'Nulla repellendus consequatur voluptatem officiis.',
-            participants: %w(person1 person2),
+            participants: %w[person1 person2],
             all_day: false
           }
         )

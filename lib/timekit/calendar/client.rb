@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class Calendar
     # Client class for the calendar resource

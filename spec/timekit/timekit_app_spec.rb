@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::App::Client do
   before(:all) do
     @client = Timekit::App::Client.new

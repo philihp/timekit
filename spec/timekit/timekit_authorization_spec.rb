@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::Authorization do
   describe '#as_json' do
     subject do

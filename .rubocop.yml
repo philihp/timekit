@@ -3,6 +3,8 @@ Documentation:
 Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 35
+Metrics/BlockLength:
+  Max: 175  
 # TODO reduce back to 5
 Metrics/ParameterLists:
   # Max: 5

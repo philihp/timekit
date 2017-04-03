@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::Findtime::Client do
   before(:all) do
     @client = Timekit::Findtime::Client.new

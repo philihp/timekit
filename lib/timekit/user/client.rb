@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Timekit
   class User
     # Client class for the user resource

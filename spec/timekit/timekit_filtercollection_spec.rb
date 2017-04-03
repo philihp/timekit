@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 describe Timekit::Filtercollection do
   before(:each) do
     subject { Timekit::Filtercollection.new }
@@ -104,7 +105,7 @@ describe Timekit::Filtercollection do
   describe '#or_on_any_days' do
     context 'when days are valid' do
       it 'must add days' do
-        subject.or_on_any_days(%w(Monday Tuesday))
+        subject.or_on_any_days(%w[Monday Tuesday])
         expect(subject.as_json[:or]).to eq(
           [
             { specific_day: { day: 'Monday' } },
@@ -116,7 +117,7 @@ describe Timekit::Filtercollection do
 
     context 'when days are invalid' do
       it 'must raise' do
-        expect { subject.or_on_any_days(%w(Munday Tuesday)) }
+        expect { subject.or_on_any_days(%w[Munday Tuesday]) }
           .to raise_error('Invalid day Munday')
       end
     end

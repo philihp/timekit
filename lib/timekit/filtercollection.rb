@@ -1,7 +1,8 @@
 # frozen_string_literal: true
+
 module Timekit
   class Filtercollection
-    DAYS = %w(
+    DAYS = %w[
       Monday
       Tuesday
       Wednesday
@@ -9,7 +10,7 @@ module Timekit
       Friday
       Saturday
       Sunday
-    ).freeze
+    ].freeze
 
     def initialize
       @and_conditions = []

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'base64'
 
 module Timekit
@@ -16,7 +17,7 @@ module Timekit
     #
     # Wrapper method for the timekit request methods of the same names
     #
-    [:get, :put, :post, :delete].each do |verb|
+    %i[get put post delete].each do |verb|
       define_method(verb) do |path, params = {}|
         # puts "Timekit::Client::#{verb} => #{path}#{token}"
         headers = {
