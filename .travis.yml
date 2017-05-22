@@ -9,7 +9,6 @@ addons:
 env:
   - GEMNASIUM_TESTSUITE="bundle exec rspec"
   - GEMNASIUM_PROJECT_SLUG="github.com/mgauthier/timekit"
-  - GEMNASIUM_TOKEN=87bc3286ce9984a2474c76884e37f0de
 install:
   - gem install bundler
   - bundle install
@@ -18,5 +17,5 @@ install:
   - sudo apt-get update
   - sudo apt-get install gemnasium-toolbelt
 script:
-  - gemnasium --token $GEMNASIUM_TOKEN autoupdate run
+  - gemnasium --token 87bc3286ce9984a2474c76884e37f0de autoupdate run
   - bundle exec rspec
