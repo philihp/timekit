@@ -7,7 +7,7 @@ require 'timekit/version'
 Gem::Specification.new do |s|
   s.add_dependency 'rest-client', '~> 2.0'
   s.name        = 'timekit'
-  s.date        = '2016-06-02'
+  s.date        = '2017-05-22'
   s.description = 'A gem to interact with the timekit.io api'
   s.summary     = s.description
   s.authors     = ['Michael Gauthier']
