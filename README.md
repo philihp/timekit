@@ -1,6 +1,6 @@
 # The Timekit Ruby Gem
 
-[![Gem Version](http://img.shields.io/gem/v/timekit.svg)][gem]
+[![Gem Version](https://badge.fury.io/rb/timekit.svg)](https://badge.fury.io/rb/timekit)
 [![Build Status](http://img.shields.io/travis/mgauthier/timekit.svg)][travis]
 [![Dependency Status](http://img.shields.io/gemnasium/mgauthier/timekit.svg)][gemnasium]
 [![Code Climate](http://img.shields.io/codeclimate/github/mgauthier/timekit.svg)][codeclimate]
