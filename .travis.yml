@@ -11,6 +11,8 @@ env:
   - GEMNASIUM_PROJECT_SLUG="github.com/mgauthier/timekit"
   - GEMNASIUM_TOKEN=87bc3286ce9984a2474c76884e37f0de
 install:
+  - gem install bundler
+  - bundle install
   - sudo sh -c 'echo "deb https://apt.gemnasium.com stable main" > /etc/apt/sources.list.d/gemnasium.list'
   - sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com E5CEAB0AC5F1CA2A
   - sudo apt-get update
