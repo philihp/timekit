@@ -6,3 +6,15 @@ rvm:
 addons:
   code_climate:
     repo_token: 2cd824119dcbd87e299b33469ef07b6f356ffd538fdde9f4827d7bc67219a644
+env:
+  - GEMNASIUM_TESTSUITE="bundle exec rspec"
+  - GEMNASIUM_PROJECT_SLUG="github.com/mgauthier/timekit"
+  - GEMNASIUM_TOKEN=87bc3286ce9984a2474c76884e37f0de
+install:
+  - sudo sh -c 'echo "deb https://apt.gemnasium.com stable main" > /etc/apt/sources.list.d/gemnasium.list'
+  - sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com E5CEAB0AC5F1CA2A
+  - sudo apt-get update
+  - sudo apt-get install gemnasium-toolbelt
+script:
+  - gemnasium --token $GEMNASIUM_TOKEN autoupdate run
+  - bundle exec rspec
