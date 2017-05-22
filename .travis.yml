@@ -14,5 +14,5 @@ install:
   - sudo apt-get update
   - sudo apt-get install gemnasium-toolbelt
 script:
-  - GEMNASIUM_PROJECT_SLUG="github.com/mgauthier/timekit" GEMNASIUM_TESTSUITE="bundle exec rspec" gemnasium --token 87bc3286ce9984a2474c76884e37f0de autoupdate run
+  - GEMNASIUM_PROJECT_SLUG="github.com/mgauthier/timekit" GEMNASIUM_TESTSUITE="bundle exec rspec" gemnasium --token 85bedab7402ee3c644108d99ab3c30f6 autoupdate run
   - bundle exec rspec
